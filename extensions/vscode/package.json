@@ -1,66 +1,31 @@
 {
 	"name": "responsive",
 	"displayName": "responsive",
-	"description": "a tool for generate responsive file in flutter",
+	"description": "a tool for generate responsive structure template in flutter",
 	"version": "0.0.1",
+	"publisher": "ayalma",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ayalma/responsive"
+	  },
 	"engines": {
 		"vscode": "^1.52.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets",
+		"Programming Languages"
 	],
+	"keywords": [
+		"dart",
+		"flutter",
+		"responsive",
+		"ui"
+	  ],
 	"activationEvents": [
 		"onCommand:responsive.new_responsive"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
-		"configuration": [
-			{
-				"title": "Bloc",
-				"properties": {
-					"bloc.checkForUpdates": {
-						"type": "boolean",
-						"default": true,
-						"description": "Whether to check if you are using the latest package versions at startup."
-					},
-					"bloc.newBlocTemplate": {
-						"type": "string",
-						"enum": [
-							"auto",
-							"equatable",
-							"freezed",
-							"simple"
-						],
-						"enumDescriptions": [
-							"automatically pick template based on dependencies",
-							"always use equatable template",
-							"always use freezed template",
-							"always use simple template"
-						]
-					}
-				}
-			},
-			{
-				"title": "Bloc",
-				"properties": {
-					"bloc.newCubitTemplate": {
-						"type": "string",
-						"enum": [
-							"auto",
-							"equatable",
-							"freezed",
-							"simple"
-						],
-						"enumDescriptions": [
-							"automatically pick template based on dependencies",
-							"always use equatable template",
-							"always use freezed template",
-							"always use simple template"
-						]
-					}
-				}
-			}
-		],
 		"commands": [
 			{
 				"command": "responsive.new_responsive",
@@ -69,13 +34,6 @@
 		],
 		"menus": {
 			"explorer/context": [
-				{
-					"when": "explorerResourceIsFolder",
-					"command": "responsive.new_responsive",
-					"group": "resGroup@1"
-				}
-			],
-			"editor/title": [
 				{
 					"when": "explorerResourceIsFolder",
 					"command": "responsive.new_responsive",
