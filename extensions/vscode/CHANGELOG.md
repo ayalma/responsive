@@ -7,3 +7,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.1.0]
 
 - Initial release
+
+
+## [0.2.0]
+
+- fl_responsive package added

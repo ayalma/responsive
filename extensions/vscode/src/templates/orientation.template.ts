@@ -6,7 +6,7 @@ export function getOrientationTemplate(viewName: string,screenType:string) {
     const screenTypeName = changeCase.pascalCase(screenType.toLowerCase());
     return `
     import 'package:flutter/material.dart';
-    import 'package:gpos_commons/src/utils/responsive/responsive.dart';
+    import 'package:fl_responsive/fl_responsive.dart';
     
     import '${snakeCaseViewName}_${screenType}_landscape.dart';
     import '${snakeCaseViewName}_${screenType}_portrait.dart';
@@ -47,7 +47,7 @@ export function getTypeLayoutTemplate(viewName: string) {
     const pascalCaseBlocName = changeCase.pascalCase(viewName.toLowerCase());
     return `
     import 'package:flutter/material.dart';
-    import 'package:gpos_commons/src/utils/responsive/responsive.dart';
+    import 'package:fl_responsive/fl_responsive.dart';
     import 'mobile/${snakeCaseViewName}_mobile.dart';
     import 'tablet/${snakeCaseViewName}_tablet.dart';
     import 'desktop/${snakeCaseViewName}_desktop.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:responsive/src/model/device_type.dart';
-import 'package:responsive/src/builder/builder.dart';
+import 'package:fl_responsive/src/model/device_type.dart';
+import 'package:fl_responsive/src/builder/builder.dart';
 
 class ScreenTypeLayout extends StatelessWidget {
   // Mobile will be returned by default

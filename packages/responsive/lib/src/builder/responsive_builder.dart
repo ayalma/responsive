@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive/src/model/device_info.dart';
+import 'package:fl_responsive/src/model/device_info.dart';
 
 class ResponsiveBuilder extends StatelessWidget {
   final Widget Function(
