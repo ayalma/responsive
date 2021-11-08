@@ -1,15 +1,15 @@
 name: fl_responsive
 description: A new Flutter package project.
-version: 0.1.0
+version: 0.2.0
 repository: https://github.com/ayalma/responsive
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^4.1.0
+  provider: ^6.0.1
 
 dev_dependencies:
   flutter_test:

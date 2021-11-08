@@ -6,7 +6,7 @@ class ResponsiveBuilder extends StatelessWidget {
     BuildContext context,
     DeviceInfo deviceInfo,
   ) builder;
-  const ResponsiveBuilder({Key key, this.builder}) : super(key: key);
+  const ResponsiveBuilder({Key? key,required this.builder}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

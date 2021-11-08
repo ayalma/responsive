@@ -6,17 +6,17 @@ import 'package:fl_responsive/src/builder/builder.dart';
 class ScreenTypeLayout extends StatelessWidget {
   // Mobile will be returned by default
   final Widget mobile;
-  final Widget tablet;
-  final Widget desktop;
+  final Widget? tablet;
+  final Widget? desktop;
 
   const ScreenTypeLayout(
-      {Key key, @required this.mobile, this.tablet, this.desktop})
+      {Key? key, required this.mobile, this.tablet, this.desktop})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, deviceInfo) {
-      var selectedWidget = mobile;
+      Widget? selectedWidget = mobile;
       // If sizing indicates Tablet and we have a tablet widget then return
       if (deviceInfo.deviceType == DeviceType.Tablet) {
         if (tablet != null) {
